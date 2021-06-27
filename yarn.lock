@@ -1955,20 +1955,35 @@
     mkdirp "^1.0.4"
     rimraf "^2.7.1"
 
-"@pancakeswap-libs/pancake-swap-core@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/pancake-swap-core/-/pancake-swap-core-0.1.0.tgz#6957f1fa02170531a2ffbf95f2c0e145e9d21bc2"
-  integrity sha512-2jYiD1Ec3xAbP4JTa/Ozylx0xI4VwC7diCm5ak4AtGrIRhfRLSanaZSQdVpLigUnIFszma/4nVWtt3cup4Poxw==
+"@candyswap-libs/candy-swap-core@^0.1.0":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@candyswap-libs/candy-swap-core/-/candy-swap-core-0.1.1.tgz#23f300f6fd6176634583fbf9625e63cfc5766acf"
+  integrity sha512-cUKeaeMXR5drnAj5HgkWBSgE5u0lkHQKG2YuOn24SqvoUUciXkbn+/b0GHDaYfAHFONKtEi3grXjusTghcYjzg==
   dependencies:
     truffle "^5.1.41"
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@pancakeswap-libs/sdk@candydefi/candy-sdk":
-  version "2.2.0"
-  resolved "https://codeload.github.com/candydefi/candy-sdk/tar.gz/ab0c1967171515452135c9ba36259cb9f03e97b7"
+"@candyswap-libs/eslint-config-candy@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@candyswap-libs/eslint-config-candy/-/eslint-config-candy-1.0.0.tgz#970c236700d032679bf24a1bb485c15c51ce9540"
+  integrity sha512-GF8Vzno43ei0fCyWbEJ11ZoqjoNooaTAmc5xLW4EefnwhMgen+VwlIT73xyyrfqQTfSurbW5bYSDA7D6QuEQvA==
   dependencies:
-    "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
+    "@typescript-eslint/eslint-plugin" "^4.7.0"
+    "@typescript-eslint/parser" "^4.7.0"
+    eslint-config-airbnb "^18.2.1"
+    eslint-config-prettier "^6.15.0"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-jsx-a11y "^6.4.1"
+    eslint-plugin-react "^7.21.5"
+    eslint-plugin-react-hooks "^4.0.0"
+
+"@candyswap-libs/sdk@^1.0.1":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@candyswap-libs/sdk/-/sdk-1.0.2.tgz#4ead3a4154581ed74fa1699d520e24dcc92e7330"
+  integrity sha512-Um/TWp2O6VIQg/XDuuUY1oet0IZFRewDaGzXDzmjk1/f50RKCM33gFm7urno2PZgGNMi1ssNwNeTFxj8oU1BRQ==
+  dependencies:
+    "@candyswap-libs/candy-swap-core" "^0.1.0"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"
